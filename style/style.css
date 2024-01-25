@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    color: #DFE3E4;
+    background-color: #464E57;
+}
+
+/* ========== Home ========== */
+.scrolled .home .container {
+    transform: scale(0.9);
+    background: linear-gradient(135deg, rgba(33,37,42,1) 0%, rgba(73,76,82,1) 100%);
+}
+
+    /* expand animation */
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ========== Gradient Bg ========== */
+.about .container, .project .card{
+    background: linear-gradient(135deg, rgba(33,37,42,1) 0%, rgba(73,76,82,1) 100%);
+}
+
+
+/* ========== Card ========== */
+.img-thumbnail{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.hover-content{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+a:hover .img-thumbnail{
+    opacity: 0.2;
+}
+a:hover .hover-content{
+    opacity: 1;
+}
+
+/* ========== Active Navbar ========== */
+.nav-link.active {
+    font-weight: 700;
+    color: #ca8a04;
+}

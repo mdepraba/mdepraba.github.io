@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <nav class="flex justify-between items-center text-slate-100 text-lg font-normal md:mx-16 align-top 2xl:max-w-[80%]">
+        <div class="logo p-4">
+            <a href="#">
+                <img src="assets/logo/Logo.png" alt="" class="w-40">
+            </a>
+        </div>
+        <div class="nav-items max-md:hidden md:min-h-fit md:w-1/2 duration-500">
+            <ul class="flex md:flex-row items-center justify-between">
+                <li class="relative after:bg-yellow-600 after:absolute after:h-px after:w-0 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#home-nav" aria-current="page" class="nav-link active">Home</a>
+                </li>
+                <li class="relative after:bg-yellow-600 after:absolute after:h-px after:w-0 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#about-nav" class="nav-link">About</a>
+                </li>
+                <li class="relative after:bg-yellow-600 after:absolute after:h-px after:w-0 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#project-nav" class="nav-link">Projects</a>
+                </li>
+                <li class="relative after:bg-yellow-600 after:absolute after:h-px after:w-0 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="relative after:bg-yellow-600 after:absolute after:h-px after:w-0 after:-bottom-1 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#contact-nav" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- active on scroll -->
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        currentSection = 'home';
+        window.addEventListener('scroll', () => {
+            sections.forEach(sec => {
+                if(window.scrollY >= (sec.offsetTop - (sec.clientHeight / 5))) {
+                    currentSection = sec.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(nav => {
+                if(nav.href.includes(currentSection)) {
+                    document.querySelector('.active').classList.remove('active');
+                    nav.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

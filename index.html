@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="icon" href="assets/logo/Logo1.png">
+        
+        <!-- ========= JS ======== -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- ========= CSS ======== -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <!-- ========= Navbar ======== -->
+        <script> $(function () {$("header").load("component/navbar.html");});</script>
+        <header class="md:sticky w-full inset-0 bg-[#464E57] z-50"></header>
+    </head>
+    <body class="flex flex-col items-center justify-center mx-auto">
+        
+<!-- ========== Home ========== -->
+    <div class="xl:h-[1vh] xl:collapse xl:inset-0 xl:-translate-y-2" id="home-nav"></div>
+    <section class="home section w-11/12 mt-10 h-[80vh] flex items-center inset-0" id="home">
+        <div class="container rounded-xl flex justify-center px-3 pb-10 text-white transition-transform duration-500 ease-in-out mx-auto">
+            <div class="content w-5/6 flex flex-col md:flex-row md:items-center md:justify-center md:mx-auto xl:gap-10 xl:py-10">
+                <div class="flex justify-center xl:items-center xl:mx-auto md:ms-6 bg-blak">
+                    <img src="assets/grey_profile_cropped.webp" class="w-64 transition-opacity mt-10 xl:w-[50vh]" alt="">
+                </div>
+                <div class="mx-auto md:w-1/2">
+                    <h1 class="text-4xl font-semibold tracking-in-expand mt-3 xl:mb-2 xl:text-7xl">Hi, I'm Praba</h1>
+                    <h2 class="text-xl font-medium tracking-in-expand mt-0 xl:text-3xl"><u>Professional Procastinator</u></h2>
+                    <p class="lead mt-3 xl:mb-10 xl:mt-7 xl:text-xl text-[#DFE3E4] mb-5">
+                        Lifetime experience in procastinate every jobs and tasks. My mission is to improve myself so in the old age I don't need to procastinate on anything anymore.
+                    </p>
+                    <p class="xl:text-xl text-[#DFE3E4]">
+                        <i>~ Tetap Santai Walau Terbantai ~</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>  
+<!-- ========================== -->
+
+
+<!-- ========== about ========== -->
+    <div class="section h-[3vh] xl:collapse xl:h-[10vh] xl:mb-12 xl:-translate-y-2" id="about-nav"></div>
+    <section class="about section mb-10 mx-5 xl:w-8/12" id="about" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container rounded-xl items-center px-4 py-6">
+            <h2 class="text-2xl font-semibold mb-4 xl:text-5xl"><span class="text-yellow-600 font-bold">About</span> me</h2>
+            <div class="grid grid-cols-1 md:grid-cols gap-10 align-text-top justify-between">
+                <article class="space-y-6 mt-5">
+                    <p class="text-justify xl:text-xl">
+                        I'm a college student of ITB Stikom Bali, currently in my 3<sup>rd</sup> semester  and interested in Full-Stack Development and Cyber Security. 
+                        Which are two of the most exciting and challenging fields in the digital world. I am always curious to discover new technologies and techniques that can help me create better and safer web applications.
+                    </p>
+                    <p class="text-justify xl:text-xl">
+                        I have  foundation in various programming languages, such as <em>C++, Python, PHP, Javascript</em>.  
+                        I also have a self-taught background in Java, which I learned before enrolling in my college courses that use C++. I am currently honing my skills in Front-End Development, as I enjoy designing and developing user-friendly and responsive websites.
+                        I am looking for opportunities to apply my knowledge and skills in real-world projects and collaborate with other passionate developers. I am eager to learn from others and share my ideas and insights. I believe that with hard work, creativity, and teamwork, I can achieve my goals and contribute to the advancement of the IT industry.
+                    </p>
+                    <p class="text-justify xl:text-xl">
+                    </p>
+                    <p class="text-justify xl:text-xl">
+                        Beyond the realms of work, my interests and hobbies shape the essence of who I am. I find solace in the pages of comic books, 
+                        exploring fascinating worlds and narratives that transcend reality. Additionally, I'm an avid gamer, relishing the thrill of virtual adventures and strategic challenges. I am also deeply enamored with the world of fine art, 
+                        particularly photography. The artistry of capturing moments and emotions through a lens resonates with me, allowing me to appreciate the beauty that often goes unnoticed in the hustle of everyday life.
+                        As I navigate through life, I proudly carry the badge of 19 years old, cherishing the wisdom that each passing year brings. Currently I'm very single, I find joy in the simple yet profound moments of connection. 
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+<!-- =========================== -->
+
+
+<!-- ========== Projects ========== -->
+    <div class="project-nav" id="project-nav"></div>
+    <section class="project section w-11/12 my-10 pt-5 2xl:mt-20" id="project">
+        <div class="container flex flex-col items-center m-auto">
+                <div class="mb-3 xl:mb-10">
+                    <h2 class="text-2xl font-semibold text-center xl:text-5xl" data-aos="fade-up" data-aos-duration="1000">My <span class="text-yellow-600 font-bold">Projects</span></h1>
+                </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 mt-5 gap-10">
+
+                <article class="card rounded-xl max-w-sm overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="https://github.com/mdepraba/myProject/tree/main/playground" target="_blank" class="w-full relative">
+                        <img src="assets/playground.webp" class="img-thumbnail block aspect-video" alt="img">
+                        <div class="hover-content absolute text-white inset-1/2 text-lg xl:text-xl"><strong>Playground Assistant</strong></div>
+                    </a>
+                    <div class="card-body px-6 py-4 space-y-4 text-md xl:text-xl">
+                        <p class="card-text text-justify">
+                            The Playground Assistant website serves as a comprehensive tool for application supervisors and administrators. It is designed with a user-friendly interface and includes four main sections, each equipped with sensors to detect the entry and exit of individuals wearing ID tags.
+                        </p>
+                        <p class="card-text text-white">
+                            Technology used: HTML, Native CSS, Javascript, Bootstrap, Datatables.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card rounded-xl max-w-sm overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#project" class="w-full relative">
+                        <img src="assets/Group 2.webp" class="img-thumbnail block aspect-video" alt="img">
+                        <div class="hover-content absolute text-white inset-1/2 text-lg xl:text-xl"><strong>Photography Collection</strong></div>
+                    </a>
+                    <div class="card-body px-6 py-4 space-y-4 text-md xl:text-xl">
+                        <p class="card-text">
+                            The Photography Collection is my collection of photos I take myself with various theme. Those photos should be in wordpress website, but I forgot to backup.
+                        </p>
+                        <p class="card-text">
+                            Technology used: Camera (Redmi Note 9 Pro), Adobe Lightroom (mobile), Snapseed, Wordpress
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="card rounded-xl max-w-sm overflow-hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="https://www.figma.com/file/GPisWeD22KWriGb2LL2Akr/Tugas-UX---Playground?type=design&node-id=332-487&mode=design&t=HtgCufLSDJuihoeD-0" target="_blank" class="w-full relative">
+                        <img src="assets/playground_design.webp" class="img-thumbnail block aspect-video" alt="img">
+                        <div class="hover-content absolute text-white inset-1/2 text-lg xl:text-xl"><strong>Playground Assistant Design</strong></div>
+                    </a>
+                    <div class="card-body px-6 py-4 space-y-4 text-md xl:text-xl">
+                        <p class="card-text">
+                            The Playground Assistant Design is a group project of User Experience. This group consist of me, Arka, Tio, Galang, Ahyar.
+                        </p>
+                        <p class="card-text">
+                            Technology used: Figma
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+<!-- ============================= -->
+
+
+<!-- ========== Gallery ========== -->
+<section class="gallery section w-11/12 justify-center group flex flex-row" id="gallery">
+    <div class="mt-20 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 md:p-4">
+        <h2 class="h-15 text-2xl xl:text-5xl font-semibold text-white md:col-start-4 md:row-start-2 md:flex"><span class="self-center text-yellow-600 font-bold">Fine Art</span></h2>
+        <h2 class="h-15 text-xl xl:text-3xl font-bold text-[#DFE3E4] md:col-start-2 md:row-start-2 md:flex"><span class="self-end">Gallery</span></h2>
+
+        <div class="group grid-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/1.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card md:col-start-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/2.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/3.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/4.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/5.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card md:col-start-2" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/6.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card md:col-start-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/7.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/8.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card md:col-start-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/9.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+        <div class="group grid-card md:col-start-2" data-aos="fade-up" data-aos-duration="1000">
+            <div class="w-48 h-64 xl:w-72 xl:h-96 relative overflow-hidden rounded-xl">
+                <img src="assets/grid/10.webp" class="w-full h-full rounded-xl hover:scale-125 transition-transform duration-500" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================= -->
+
+
+<!-- ========== Contact ========== -->
+    <section class="contact section relative flex flex-col mt-10 2xl:pt-96" id="contact">
+        <div class="social-gradient block bg-gradient-to-b from-transparent to-black content-none h-96 -mb-1"></div>
+        <div class="social flex w-screen h-screen z-10 relative m-auto bg-black">
+            <div id="contact-nav" class="flex w-screen h-screen z-10 relative m-auto
+            before:bg-[url('assets/contact_me2.png')] before:bg-contain before:bg-center before:bg-no-repeat before:w-full before:h-screen before:absolute before:-z-10" id="social"
+            data-aos="fade" data-aos-duration="1000"></div>
+        </div>
+    </section>
+<!-- ============================= -->
+
+<script src="script/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+    </body>
+</html>
